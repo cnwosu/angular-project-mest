@@ -1,0 +1,36 @@
+<h2>{{ amaka.firstname | uppercase }} Details</h2>
+
+<div>
+  <label>firstname: 
+    <input [(ngModel)]="amaka.firstname"
+    placeholder=" name">
+  </label>
+</div>
+&nbsp;
+<div>
+    <label>lastname:
+      <input [(ngModel)]="amaka.lastname" placeholder=" name">
+    </label>
+</div>
+
+&nbsp; 
+
+<div>
+    <label>DOB:
+      <input [(ngModel)]="amaka.DOB" placeholder=" Date">
+    </label>
+</div>
+&nbsp;
+<div>
+    <label>Gender:
+      <input [(ngModel)]="amaka.gender" 
+      placeholder=" M / F">
+    </label>
+</div>
+&nbsp;
+
+<div>
+  <label>Fullname:
+    
+    </label>{{amaka.firstname  + ' ' + amaka.lastname}}
+</div>
